@@ -1,0 +1,28 @@
+.image-upload > input {
+  display: none;
+}
+
+.image-upload > label {
+  cursor: pointer;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.responsive-width {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .custom-grid {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .responsive-width {
+    width: 90%;
+  }
+}
