@@ -1,5 +1,39 @@
+Link {
+  text-decoration: none;
+}
+
+th {
+  padding: 1rem;
+}
+td {
+  padding: 1rem;
+  max-width: 1rem;
+  word-break: break-all;
+}
+
+tr:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+tr:nth-child(1) {
+  background-color: white;
+}
+
+.responsive-close {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   html {
     font-size: 62.5%;
+  }
+
+  .responsive-close {
+    display: block;
+  }
+}
+@media only screen and (max-width: 426px) {
+  html {
+    font-size: 47.5%;
   }
 }

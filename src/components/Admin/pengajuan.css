@@ -1,0 +1,15 @@
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+@media only screen and (max-width: 768px) {
+  .custom-grid {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media only screen and (max-width: 426px) {
+  .custom-grid {
+    grid-template-columns: repeat(1, auto);
+  }
+}
